@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tennis at University Sports Complex</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    table {
+      margin: 1.5rem 0;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      padding: 0.5rem;
+      text-align: left;
+      vertical-align: middle;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #eee;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background-color: #f7fafc;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .section-content {
+      margin-bottom: 1.5rem;
+    }
+    .button {
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: #008CBA;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.button:hover:before {
+  transform: scaleX(1);
+}
+
+.button .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%) scale(0.7);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.button:hover .icon {
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  opacity: 1;
+}
+
+.button .icon:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -8px;
+  border: 3px solid #008CBA;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.button:hover .icon:before {
+  opacity: 1;
+  transform: scale(1);
+}
+ a{
+  text-decoration: none;
+  color: rgb(68, 3, 3);
+ }
+
+.w-100 { width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tennis at University Sports Complex</h1>
+    <img src="photo-1511067007398-7e4b90cfa4bc.jpeg" alt="" style="border-radius: 50 rem; width: 800px";>
+    <div class="section">
+      <h2>Indoor Tennis</h2>
+      <p>Our sports complex features four indoor tennis courts that are available for use by all students and faculty members.</p>
+      <ul>
+        <li>Reservations can be made up to seven days in advance.</li>
+        <li>Courts are available on a first-come, first-served basis for walk-ins.</li>
+        <li>Court fees are $20 per hour for students and $25 per hour for faculty members.</li>
+        <li>Courts can be reserved for singles or doubles play.</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday-Friday</td>
+            <td>8:00 AM - 10:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday-Sunday</td>
+            <td>10:00 AM - 8:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Outdoor Tennis</h2>
+      <p>We also have four outdoor tennis courts that are available for use during the warmer months of the year
+       
+		
+
+		<h3>Rules and Regulations</h3>
+		<ul>
+			<li>Indoor tennis is played with a standard tennis ball and racket.</li>
+			<li>Court reservations can be made up to a week in advance.</li>
+			<li>Players are responsible for providing their own equipment, including rackets and tennis balls.</li>
+			<li>Court fees may apply, depending on the time and day of the reservation.</li>
+			<li>Appropriate tennis shoes must be worn on the courts. Street shoes are not allowed.</li>
+			<li>No food or drinks (except water) are allowed on the courts.</li>
+			<li>Court etiquette must be followed at all times, including proper attire and behavior.</li>
+			<li>Players must clean up after themselves and dispose of any trash in designated bins.</li>
+			<li>Respect other players' reservations and arrive on time for your scheduled court time. </li>
+			<li>Courts may be reserved for up to 2 hours at a time.</li>
+		</ul>
+
+		<h2>Outdoor Tennis</h2>
+		<p>Our university sports complex also offers outdoor tennis courts that are available for booking by students, faculty, and staff. These courts are perfect for enjoying the beautiful weather and fresh air while playing a game of tennis. </p>
+
+		<h3>Rules and Regulations</h3>
+		<ul>
+			<li>Outdoor tennis is played with a standard tennis ball and racket.</li>
+			<li>Court reservations can be made up to a week in advance.</li>
+			<li>Players are responsible for providing their own equipment, including rackets and tennis balls.</li>
+			<li>Court fees may apply, depending on the time and day of the reservation.</li>
+			<li>Appropriate tennis shoes must be worn on the courts. Street shoes are not allowed.</li>
+			<li>No food or drinks (except water) are allowed on the courts.</li>
+			<li>Court etiquette must be followed at all times, including proper attire and behavior.</li>
+			<li>Players must clean up after themselves and dispose of any trash in designated bins.</li>
+			<li>Respect other players' reservations and arrive on time for your scheduled court time. </li>
+			<li>Courts may be reserved for up to 2 hours at a time.</li>
+		</ul>
+    <button class="button">
+      <a href="sb.html"><span>Book now</span></a>
+      <span class="icon"></span>
+    </button>
+    
+      </button>
+    </div>
+</body>
+</html>

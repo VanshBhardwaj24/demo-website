@@ -1,0 +1,256 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sports Complex</title>
+    <style>
+     :root {
+  --primary-color: #3498db;
+  --secondary-color: #f1c40f;
+  --background-color: #f8f8f8;
+  --border-color: #ccc;
+  --border-radius: 5px;
+  --font-family: sans-serif;
+  --button-spacing: 20px;
+  --website-padding: 40px;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  background-color: var(--background-color);
+  padding: var(--website-padding);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: var(--primary-color);
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 15px 30px;
+  margin-right: var(--button-spacing);
+  margin-bottom: var(--button-spacing);
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: #5e0303;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.slot-details {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: #333;
+}
+
+.slot-details h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.slot-details p:last-child {
+  margin-bottom: 0;
+}
+
+.slot-details ul {
+  margin-bottom: 20px;
+}
+
+.slot-details li {
+  margin-bottom: 5px;
+}
+
+.slot-details li:before {
+  content: '\2022';
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+/* Specific styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--website-padding);
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: #be3232;
+}
+
+.slot-details.show {
+  display: block;
+}
+
+      .card-button {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    font-display: 2rem;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    color: #333;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .card-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    background-color: var(--primary-color);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card-button:hover:before {
+    transform: translateY(0);
+  }
+  
+  .card-details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    border-top: none;
+    border-radius: var(--border-radius);
+    color: #333;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card-details.show {
+    height: 200px;
+  }
+  button{
+    justify-content: center;
+    position: fixed;
+    border-radius: 3rem;
+    align-items: center;
+    justify-items: center;
+    display: inline-block;
+    position: relative;
+    color: rgb(88, 88, 3);
+    font-family: sans-serif;
+
+  }
+  ::before .toggle-btn{
+    padding: 5rem 4 rem 3 rem 2 rem;
+  }
+  a{
+    text-decoration: none;
+    text-align: center;
+  }
+    </style>
+  
+
+
+
+  </head>
+  <body>
+
+    <div class="container">
+  
+
+        <h1>About Us</h1>
+        <img src="ossbs.jpg" alt="" style="width:700px; ">
+        <p>Our system is designed to provide a seamless and hassle-free experience for students and staff who want to book slots for their favorite sports. We understand the importance of sports in a student's life, and our mission is to make it as easy as possible for everyone to access and enjoy the facilities.</p>
+      <p>Our system is user-friendly and intuitive, making it easy for anyone to navigate and book a slot in just a few clicks. You can access the system through our website or mobile app, giving you the flexibility to book your slots from anywhere and at any time.</p>
+
+      <ul>
+        <h2>Facilities</h2>
+        <div class="facilities">
+          <div class="facility" data-name="gym" data-price="10">
+            <button class="toggle-btn" >
+              <a href="sb.html
+              "> Gym</a></button>
+            <div class="details">
+              <h3>Gym Slots</h3>
+              <p>We have a variety of gym equipment available for use, including treadmills, weight machines, and free weights. The gym is open from 6am to 10pm every day, and slots are available in one-hour increments.</p>
+            </div>
+          </div>
+          <div class="facility" data-name="tennis" data-price="20">
+            <button class="toggle-btn" >
+              <a href="ha1.html"> Tennis Court</a></button>
+            <div class="details">
+              <h3>Tennis Court Slots</h3>
+              <p>Our tennis court is available for use from 8am to 8pm every day, and slots are available in two-hour increments. </p>
+            </div>
+          </div>
+          <div class="facility" data-name="basketball" data-price="15">
+            <button class="toggle-btn"> <a href="ha5.html">Basketball Court</a> </button>
+            <div class="details">
+              <h3>Basketball Court Slots</h3>
+              <p>Our basketball court is available for use from 10am to 9pm every day, and slots are available in two-hour increments .</p>
+            </div>
+          </div>
+          <div class="facility" data-name="football" data-price="25">
+            <button class="toggle-btn">
+              <a href="ha4.html"> Football Field</a></button>
+            <div class="details">
+              <h3>Football Field Slots</h3>
+              <p>Our football field is available for use from 12pm to 8pm every day, and slots are available in two-hour increments.</p>
+            </div>
+          </div>
+          <div class="facility" data-name="swimming" data-price="30">
+            <button class="toggle-btn">
+            <a href="ha2.html"> Swimming Pool </a></button>
+            <div class="details">
+              <h3>Swimming Pool Slots</h3>
+              <p>Our swimming pool is available for use from 9am to 7pm every day, and slots are available in two-hour increments.</p>
+            </div>
+          </div>
+        </div>
+     
+
+         
+
+        

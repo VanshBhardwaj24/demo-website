@@ -1,0 +1,564 @@
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie Slot Booking</title>
+	<link rel="stylesheet" href="style.css">
+  <style>
+    * {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px;
+	background-color: #fff;
+  border-radius: 223rem;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+select,
+input[type="date"],
+input[type="number"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f2f2f2;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: #444;
+} 
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgb(50 3 7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(3, 22, 26, 0.1);
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: s#232f3e;
+  font-size: 36px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+select,
+input[type="date"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  margin-top: 5px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #355276;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+
+button[type="submit"]:hover {
+  background-color: #1a2330;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  button[type="submit"] {
+    padding: 8px 16px;
+  }
+}
+
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
+
+/* Custom styles */
+
+/* / */
+  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+  caret-color: red;
+}
+
+h1{
+  padding:20 rem 40 rem 6 rem 2 rem;
+  display: flex;
+  position: relative;
+  ;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-size: 1.34rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+.container {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("https://img.icons8.com/color/100/000000/twitter--v2.png");
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(4) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+button {
+  color: white;
+  margin-top: 20px;
+  background: #1DA1F2;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+  position: relative;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+a {
+  position: absolute;
+  font-size: 8px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+  </style>
+  <form action="submit.php" method="post">
+    
+  </form>
+   
+  
+</head>
+<body>
+  
+  <img src="ossbs 1.jpg" alt="" style=">
+	<div class="container">
+    
+		
+		<form>
+    
+			<div class="form-group">
+				<label for="movie">Sport</label>
+        <input type="text" id="date" name="date" placeholder="Enter sport name" required>
+				
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="date">Select Date:</label>
+				<input type="date" id="date" name="date" placeholder="Enter the Date">
+			</div>
+			<div class="form-group">
+				<label for="time">Time</label>
+				<input type="time" id="date" name="date" required>
+			</div>
+			<div class="form-group">
+				<label for="seats">Select Number of Courts:</label>
+				<input type="number" id="seats" name="seats" min="1" max="10" placeholder="Enter the amount of courts/field ">
+			</div>
+			<button type="submit" style="height: 40px; border-radius: 50000rem;
+      ;">Book Now</button>
+		</form>
+    
+</body>
+</html>
+
+<!--  -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Complex Slot Booking System</title>
+	<link rel="stylesheet" type="text/css" href="style34.css">
+  <style>
+    * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.bg-image {
+	background-image: url('your_background_image_url_here');
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=date],
+input[type=number],
+select {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+
+input[type=submit] {
+	background-color: #008CBA;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.message.sucess{
+  display: none;
+}
+.message.danger{
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <script src="s34.js"></script>
+	<div class="bg-image">
+    <img src="ossbs 1.jpg" alt="">
+  </div>
+	<div class="center">
+		<h2>Sports Complex Slot Booking System</h2>
+    <div class="message">
+      <div class="sucess" id="sucesss">
+       
+      </div>
+      <div class="danger" id="danger">
+       
+      </div>
+    </div>
+    
+		<form  >
+			<label for="sports">Sports:</label>
+			<input type="text" id="sports" name="sports" placeholder="Enter sport here" required><br><br>
+
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date" placeholder="enter date" required><br><br>
+
+			<label for="time">Time Slot:</label>
+			<select id="time" name="time">
+				<option value="10am-11am">10am-11am</option>
+				<option value="1pm-2pm">1pm-2pm</option>
+				<option value="3pm-4pm">3pm-4pm</option>
+				<option value="5pm-6pm">5pm-6pm</option>
+				<option value="7pm-8pm">7pm-8pm</option>
+				<option value="9pm-10pm">9pm-10pm</option>
+			</select><br><br>
+
+			<label for="court">Court/Field:</label>
+			<input type="number" id="court" name="court" min="1" max="10" placeholder="Count of field/court" required><br><br>
+
+        
+        <a href="hy.html" style="border: #008CBA; width: auto;"><span>Book now</span></a>
+        <span class="ion"></span>
+      
+      </button>
+		</form>
+    <footer>
+      <button class="rgb-button"><a href="index.html">Home</a></button>
+
+
+    </footer>
+    <script>
+
+      
+    </script>
+	</div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Complex Slot Booking System</title>
+	<link rel="stylesheet" type="text/css" href="style34.css">
+	<style>
+		
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="bg-image">
+    <img src="ossbs 1.jpg" alt="">
+  </div>
+	<div class="center">
+		<h2>Sports Complex Slot Booking System</h2>
+		<form onsubmit="return validateForm()">
+			<label for="sports">Sports:</label>
+			<input type="text" id="sports" name="sports"><br><br>
+
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date"><br><br>
+
+			<label for="time">Time Slot:</label>
+			<select id="time" name="time">
+				<option value="10am-11am">10am-11am</option>
+				<option value="1pm-2pm">1pm-2pm</option>
+				<option value="3pm-4pm">3pm-4pm</option>
+				<option value="5pm-6pm">5pm-6pm</option>
+				<option value="7pm-8pm">7pm-8pm</option>
+				<option value="9pm-10pm">9pm-10pm</option>
+			</select><br><br>
+
+			<label for="court">Court/Field:</label>
+			<input type="number" id="court" name="court" min="1" max="10"><br><br>
+
+			<input type="submit" value="Book now">
+		</form>
+    <footer>
+      <button class="rgb-button"><a href="index.html">Home</a></button>
+    </footer>
+	</div>
+
+  <script>
+    function validateForm() {
+      var sports = document.forms[0]["sports"].value;
+      var date = document.forms[0]["date"].value;
+      var time = document.forms[0]["time"].value;
+      var court = document.forms[0]["court"].value;
+
+      if (sports == "" || date == "" || time == "" || court == "") {
+        alert("All fields must be filled out");
+        return false;
+      }
+
+      alert("Your details are stored");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
+ -->
